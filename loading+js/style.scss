@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+}
+.loading {
+  display: flex;
+}
+.hidden {
+  display: none;
+}
+.show {
+  display: block;
+}
+#loadingBtn {
+  height: 50px;
+  width: 200px;
+  border-radius: 40px;
+  background: none;
+  border: 3px solid white;
+  color: white;
+  font-size: 20px;
+  box-shadow: 0 0 40px 10px white;
+  margin: 3em;
+}
+.loadingContainer {
+  height: 100vh;
+  width: 100%;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.loading1 {
+  transition: all 1s ease-in;
+}
+.loading2 {
+  transition: all 10s ease-in;
+}
+.loading3 {
+  transition: all 15s ease-in;
+}
+.loading4 {
+  transition: all 20s ease-in;
+}
+.loadingText {
+  color: white;
+  opacity: 1;
+  animation: fadeloop 5s infinite;
+}
+.loadingBox {
+  display: flex;
+
+  .loadingBar1 {
+    border: 3px solid white;
+    height: 30px;
+    margin: 7em 3em 1em 1em;
+    width: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0 0 40px 5px white;
+    opacity: 0;
+    background: white;
+  }
+
+  .loadingBar2 {
+    border: 3px solid white;
+    height: 60px;
+    margin: 5em 3em 1em 1em;
+    width: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0 0 40px 10px white;
+    opacity: 0;
+    background: white;
+  }
+  .loadingBar3 {
+    border: 3px solid white;
+    height: 90px;
+    margin: 3em 3em 1em 1em;
+    width: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0 0 40px 15px white;
+    opacity: 0;
+    background: white;
+  }
+  .loadingBar4 {
+    border: 3px solid white;
+    height: 120px;
+    margin: 1em 3em 1em 1em;
+    width: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0 0 40px 20px white;
+    opacity: 0;
+    background: white;
+  }
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  11% {
+    opacity: 0.1;
+  }
+  22% {
+    opacity: 0.2;
+  }
+  33% {
+    opacity: 0.3;
+  }
+  44% {
+    opacity: 0.4;
+  }
+  55% {
+    opacity: 0.5;
+  }
+  66% {
+    opacity: 0.6;
+  }
+  77% {
+    opacity: 0.7;
+  }
+  88% {
+    opacity: 0.8;
+  }
+  99% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeloop {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
